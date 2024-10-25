@@ -1,0 +1,144 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #444;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+/* Adds spacing to account for the fixed navigation */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Glowing text effect */
+.glow-text {
+    font-size: 3em;
+    text-shadow: 0 0 20px rgba(0, 153, 255, 1);
+}
+
+.matrix-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('path-to-your-matrix-background.gif') repeat;
+    opacity: 0.1; /* Low opacity for subtle background effect */
+}
+
+.divider {
+    height: 2px;
+    background: linear-gradient(to right, #007BFF, #0056b3); /* Gradient effect for the divider */
+    margin: 40px 0;
+}
+
+/* Styles for main section headers (h2) */
+h2 {
+    font-size: 2.5em; /* Increase font size */
+    color: #007BFF; /* Unique color for emphasis */
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.7); /* Slight glow effect */
+    font-weight: bold; /* Bold for emphasis */
+    margin: 40px 0; /* Extra margin for spacing */
+}
+
+/* Project headers (h3) - without glow effect */
+h3 {
+    font-size: 2em; /* Increase size of subheadings */
+    color: #f0f0f0; /* Light text color */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+.large-text {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+/* Flexbox to center project list */
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    background-color: #3b3b3b; /* Dark background for each project */
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 80%; /* Set a fixed width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.project:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 153, 255, 0.5); /* Glow shadow effect */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF; /* Primary button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.scroll-down {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #444;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Contact info section */
+.contact-info {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
